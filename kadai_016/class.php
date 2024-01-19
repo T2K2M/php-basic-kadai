@@ -13,8 +13,8 @@
             public $name;
             public $price;
             // メソッドを定義
-            public function show_price(int $price) {
-                $this->price = $price;
+            public function show_price() {
+                $this->price = 250;
                 echo $this->price . '<br>';
             }
             // コンストラクタを定義
@@ -35,8 +35,8 @@
             public $height;
             public $weight;
             // メソッドを定義
-            public function show_height(int $height) {
-                $this->height = $height;
+            public function show_height() {
+                $this->height = 60;
                 echo $this->height . '<br>';
             }
             // コンストラクタを定義
@@ -52,8 +52,8 @@
         echo '<br>';
         
         // メソッドへアクセス
-        $food->show_price(250);
-        $animal->show_height(60);
+        $food->show_price();
+        $animal->show_height();
         ?>
     </p>
 </body>
