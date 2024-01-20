@@ -7,17 +7,17 @@
 <body>
     <p>
         <?php
-        // クラスを作成
-        class Food {
-            // プロパティを定義
-            public $name;
-            public $price;
-            // メソッドを定義
+         // クラスを作成する
+         class Food {
+            // プロパティを定義する
+            private $name;
+            private $price;
+            // メソッドを定義する
             public function show_price() {
                 $this->price = 250;
                 echo $this->price . '<br>';
             }
-            // コンストラクタを定義
+            // コンストラクタを定義する
             public function __construct(string $name, int $price) {
                 $this->name = $name;
                 $this->price = $price;
@@ -30,31 +30,33 @@
 
         // クラスを作成する
         class Animal {
-            // プロパティを定義
-            public $name;
-            public $height;
-            public $weight;
-            // メソッドを定義
+            // プロパティを定義する
+            private $name;
+            private $height;
+            private $weight;
+            // メソッドを定義する
             public function show_height() {
                 $this->height = 60;
                 echo $this->height . '<br>';
             }
-            // コンストラクタを定義
+            // コンストラクタを定義する
             public function __construct(string $name, int $height, string $weight) {
                 $this->name = $name;
                 $this->height = $height;
                 $this->weight = $weight;
             }
         }
-        // インスタンス化
+        // インスタンス化する
         $animal = new Animal('dog' ,60, 5000);
         print_r($animal);
         echo '<br>';
         
-        // メソッドへアクセス
+        // メソッドへアクセスする
         $food->show_price();
         $animal->show_height();
         ?>
+     
+        
     </p>
 </body>
 </html>
