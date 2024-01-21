@@ -12,7 +12,7 @@
              private $name;
              private $price;
          
-             public function show_price($price)
+             public function show_price()
              {
                  echo $this->price;
              }
@@ -34,7 +34,7 @@
              private $height;
              private $weight;
          
-             public function show_height($height)
+             public function show_height()
              {
                  echo $this->height;
          
