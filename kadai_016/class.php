@@ -53,10 +53,10 @@
          print_r($animal);
          echo '<br>';
          
-         $food->show_price(250);
+         $food->show_price();
          echo '<br>';
          
-         $animal->show_height(60);
+         $animal->show_height();
          
         ?>
      
